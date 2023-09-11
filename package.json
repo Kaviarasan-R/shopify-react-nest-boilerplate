@@ -1,0 +1,38 @@
+{
+  "name": "shopify-react-nest-boilerplate",
+  "version": "v1.0.0-beta.1",
+  "description": "Shopify boilerplate code writtern in React, Nest, Prisma and GraphQL",
+  "type": "module",
+  "author": {
+    "name": "Kaviarasan R",
+    "url": "https://github.com/Kaviarasan-R"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaviarasan-R/shopify-react-nest-boilerplate"
+  },
+  "scripts": {
+    "ngrok": "ngrok http 5173",
+    "ngrok:prod": "ngrok http 3000",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "node apps/server/dist/main",
+    "prisma:migrate": "prisma migrate dev --schema=./apps/server/prisma/schema.prisma",
+    "shopify": "shopify",
+    "s:e:create": "shopify app generate extension",
+    "s:e:deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.2.0"
+  },
+  "devDependencies": {
+    "@shopify/app": "^3.49.2",
+    "@shopify/cli": "^3.49.2",
+    "@shopify/cli-kit": "^3.49.2",
+    "prisma": "^5.2.0",
+    "turbo": "^1.10.13"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}

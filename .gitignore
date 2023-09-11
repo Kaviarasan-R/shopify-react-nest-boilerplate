@@ -1,0 +1,15 @@
+# Monorepo
+node_modules
+package-lock.json
+
+# Client
+apps/client/.turbo
+apps/client/dist
+apps/client/node_modules
+apps/client/.env
+
+# Server
+apps/server/.turbo
+apps/server/dist
+apps/server/node_modules
+apps/server/.env
