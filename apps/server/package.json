@@ -23,7 +23,6 @@
     "@nestjs/serve-static": "^4.0.0",
     "@prisma/client": "^5.2.0",
     "@shopify/shopify-api": "^7.6.0",
-    "base64url": "^3.0.1",
     "body-parser": "^1.20.2",
     "crypto": "^1.0.1",
     "cryptr": "^6.2.0",

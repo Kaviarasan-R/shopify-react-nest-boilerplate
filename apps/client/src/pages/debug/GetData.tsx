@@ -1,4 +1,12 @@
-import { Layout, LegacyCard, Page } from "@shopify/polaris";
+import {
+  Layout,
+  Card,
+  Button,
+  Text,
+  VerticalStack,
+  HorizontalStack,
+  Page,
+} from "@shopify/polaris";
 import { navigate } from "raviger";
 import { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
@@ -74,62 +82,76 @@ const GetData = () => {
     >
       <Layout>
         <Layout.Section>
-          <LegacyCard
-            sectioned
-            primaryFooterAction={{
-              content: "Refetch",
-              onAction: () => {
-                fetchContent();
-              },
-            }}
-          >
-            <p>
-              GET <code>"/apps/api"</code>: {responseData}
-            </p>
-          </LegacyCard>
+          <Card>
+            <VerticalStack gap={"3"}>
+              <p>
+                GET <code>"/apps/api"</code>: {responseData}
+              </p>
+              <HorizontalStack align="end">
+                <Button
+                  onClick={() => {
+                    fetchContent();
+                  }}
+                  primary
+                >
+                  Refetch
+                </Button>
+              </HorizontalStack>
+            </VerticalStack>
+          </Card>
         </Layout.Section>
         <Layout.Section>
-          <LegacyCard
-            sectioned
-            primaryFooterAction={{
-              content: "Refetch",
-              onAction: () => {
-                fetchContentPost();
-              },
-            }}
-          >
-            <p>
-              POST <code>"/apps/api" </code>: {responseDataPost}
-            </p>
-          </LegacyCard>
+          <Card>
+            <VerticalStack gap={"3"}>
+              <p>
+                POST <code>"/apps/api" </code>: {responseDataPost}
+              </p>
+              <HorizontalStack align="end">
+                <Button
+                  onClick={() => {
+                    fetchContentPost();
+                  }}
+                  primary
+                >
+                  Refetch
+                </Button>
+              </HorizontalStack>
+            </VerticalStack>
+          </Card>
         </Layout.Section>
         <Layout.Section>
-          <LegacyCard
-            sectioned
-            primaryFooterAction={{
-              content: "Refetch",
-              onAction: () => {
-                fetchContentGQL();
-              },
-            }}
-          >
-            <p>
-              GET <code>"/apps/api/gql"</code>: {responseDataGQL}
-            </p>
-          </LegacyCard>
-          <LegacyCard title="Developer Notes">
-            <LegacyCard.Section title="Making Requests">
-              <li>
-                Create a new module in <code>server</code> and add it to your{" "}
-                <code>AppModule</code> to expose it behind{" "}
-                <code>VerifyRequest</code>.
-              </li>
-              <li>
-                Create a new instance of <code>useFetch()</code> and use that to
-                make a request to <code>/your-route/goes-here/</code>
-              </li>
-            </LegacyCard.Section>
-          </LegacyCard>
+          <Card>
+            <VerticalStack gap={"3"}>
+              <p>
+                GET <code>"/apps/api/gql"</code>: {responseDataGQL}
+              </p>
+              <HorizontalStack align="end">
+                <Button
+                  onClick={() => {
+                    fetchContentGQL();
+                  }}
+                  primary
+                >
+                  Refetch
+                </Button>
+              </HorizontalStack>
+            </VerticalStack>
+          </Card>
+
+          <Card>
+            <Text variant="headingSm" as="h6">
+              Developer Notes
+            </Text>
+            <li>
+              Create a new module in <code>server</code> and add it to your{" "}
+              <code>AppModule</code> to expose it behind{" "}
+              <code>VerifyRequest</code>.
+            </li>
+            <li>
+              Create a new instance of <code>useFetch()</code> and use that to
+              make a request to <code>/your-route/goes-here/</code>
+            </li>
+          </Card>
         </Layout.Section>
       </Layout>
     </Page>

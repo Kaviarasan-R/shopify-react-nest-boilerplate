@@ -39,6 +39,7 @@ This is an in-depth guide on using this repo. This goes over getting the base re
 - [x] Run `npm i --force` to install dependencies.
   - Substantial efforts have gone into ensuring we're using the latest package versions, and some incompatibility issues always pop up while installing. There are no negative effects on the functionality just yet, but if you find anything please open an issue.
   - Do not delete `shopify.app.toml` file since that's required by Shopify CLI 3.0 to function properly, even if the file is empty.
+- [x] Run `npm i --workspace <client | server> package` to install dependencies from root.
 - [x] Create a new app (Public or Custom) from your [Shopify Partner Dashboard](https://partners.shopify.com).
   - The App URL will be generated later in the setup. Add `https://localhost` for now.
 - [x] Build your `.env` file based on `.env.example`
