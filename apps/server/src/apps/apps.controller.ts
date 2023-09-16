@@ -12,15 +12,11 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 
 /* Services */
 import { ClientProvider } from '@/utils/client-provider.service';
-// import { AllowRoute } from '@/guards/active-shops.guard';
-// import { GaurdException } from '@/exceptions/guard-exception.service';
 
 @Controller('apps')
 @Module({
   imports: [ConfigModule],
 })
-// @UseGuards(AllowRoute)
-// @UseFilters(GaurdException)
 export class AppsController {
   constructor(
     private clientProvider: ClientProvider,
