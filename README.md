@@ -1,5 +1,14 @@
 # Shopify React.js x Nest.js Boilerplate
 
+<br />
+<div align="center">
+  <img src="https://github.com/Kaviarasan-R/shopify-react-nest-boilerplate/assets/62686489/1caf1b3a-6d9c-4d17-80f6-b53916dd0cca" alt="shopify" width="100" height="100" >&emsp;&emsp;
+  <img src="https://github.com/Kaviarasan-R/shopify-react-nest-boilerplate/assets/62686489/2f316157-bcb4-4d02-95f9-756ec13ba0fe" alt="React" width="100" height="100" >&emsp;&emsp;
+  <img src="https://github.com/Kaviarasan-R/shopify-react-nest-boilerplate/assets/62686489/ce41c65e-52db-465b-b407-3a740f63588e" alt="nestjs" width="100" height="100" >&emsp;&emsp;
+  <img src="https://github.com/Kaviarasan-R/shopify-react-nest-boilerplate/assets/62686489/ce8c4268-cea6-4722-ad02-19becebb6824" alt="turbo-monorepo" width="100" height="100" >
+</div>
+<br />
+
 An embedded app starter template to get up and ready with Shopify app development with TypeScript. This is heavily influenced by the choices Shopify Engineering team made in building their [starter template](https://github.com/Shopify/shopify-app-template-node) to ensure smooth transition between templates.
 
 ## Supporting repositories
